@@ -1,0 +1,7 @@
+C:\workspace\Torneseumprogramador\Console\ConsoleAppFundamentos\ConsoleAppFundamentos\bin\Debug\ConsoleAppFundamentos.exe.config
+C:\workspace\Torneseumprogramador\Console\ConsoleAppFundamentos\ConsoleAppFundamentos\bin\Debug\ConsoleAppFundamentos.exe
+C:\workspace\Torneseumprogramador\Console\ConsoleAppFundamentos\ConsoleAppFundamentos\bin\Debug\ConsoleAppFundamentos.pdb
+C:\workspace\Torneseumprogramador\Console\ConsoleAppFundamentos\ConsoleAppFundamentos\obj\Debug\ConsoleAppFundamentos.csproj.CoreCompileInputs.cache
+C:\workspace\Torneseumprogramador\Console\ConsoleAppFundamentos\ConsoleAppFundamentos\obj\Debug\ConsoleAppFundamentos.exe
+C:\workspace\Torneseumprogramador\Console\ConsoleAppFundamentos\ConsoleAppFundamentos\obj\Debug\ConsoleAppFundamentos.pdb
+C:\workspace\Torneseumprogramador\Console\ConsoleAppFundamentos\ConsoleAppFundamentos\obj\Debug\ConsoleAppFundamentos.csproj.AssemblyReference.cache
