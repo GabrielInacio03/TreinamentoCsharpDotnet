@@ -1,0 +1,11 @@
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.AssemblyReference.cache
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormShow.resources
