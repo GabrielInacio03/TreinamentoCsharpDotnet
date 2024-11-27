@@ -23,5 +23,16 @@ namespace WindowsFormsApp.Models
             Telefone = telefone;
             Celular = celular;
         }
+        public static List<Cliente> ListaDeClientes()
+        {
+            var clientes = new List<Cliente>();
+            clientes.Add(new Cliente(1, "João", "23131313", "1499999999","1144443333"));
+            clientes.Add(new Cliente(2, "Maria", "23131313", "1499999999", "1144443333"));
+            clientes.Add(new Cliente(3, "Ana", "23131313", "1499999999", "1144443333"));
+            clientes.Add(new Cliente(4, "Guilherme", "23131313", "1499999999", "1144443333"));
+            clientes.Add(new Cliente(5, "Carlos", "23131313", "1499999999", "1144443333"));
+
+            return clientes;
+        }
     }
 }

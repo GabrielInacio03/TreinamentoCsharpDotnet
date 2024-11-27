@@ -36,6 +36,7 @@ namespace WindowsFormsApp
             this.cboEstados = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblDataGridview = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,14 +53,14 @@ namespace WindowsFormsApp
             // 
             this.txtNomeUsuario.Location = new System.Drawing.Point(49, 87);
             this.txtNomeUsuario.Name = "txtNomeUsuario";
-            this.txtNomeUsuario.Size = new System.Drawing.Size(263, 26);
+            this.txtNomeUsuario.Size = new System.Drawing.Size(312, 26);
             this.txtNomeUsuario.TabIndex = 1;
             // 
             // btnClick
             // 
             this.btnClick.Location = new System.Drawing.Point(49, 201);
             this.btnClick.Name = "btnClick";
-            this.btnClick.Size = new System.Drawing.Size(263, 77);
+            this.btnClick.Size = new System.Drawing.Size(312, 77);
             this.btnClick.TabIndex = 2;
             this.btnClick.Text = "Clicar";
             this.btnClick.UseVisualStyleBackColor = true;
@@ -69,7 +70,7 @@ namespace WindowsFormsApp
             // 
             this.btnShow.Location = new System.Drawing.Point(49, 300);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(263, 107);
+            this.btnShow.Size = new System.Drawing.Size(312, 107);
             this.btnShow.TabIndex = 3;
             this.btnShow.Text = "SHOW Formulário";
             this.btnShow.UseVisualStyleBackColor = true;
@@ -85,7 +86,7 @@ namespace WindowsFormsApp
             "Minas Gerais"});
             this.cboEstados.Location = new System.Drawing.Point(49, 147);
             this.cboEstados.Name = "cboEstados";
-            this.cboEstados.Size = new System.Drawing.Size(263, 28);
+            this.cboEstados.Size = new System.Drawing.Size(312, 28);
             this.cboEstados.TabIndex = 4;
             this.cboEstados.Text = "-- Selecione --";
             // 
@@ -101,18 +102,28 @@ namespace WindowsFormsApp
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(373, 87);
+            this.dataGridView1.Location = new System.Drawing.Point(401, 122);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 191);
             this.dataGridView1.TabIndex = 6;
+            // 
+            // lblDataGridview
+            // 
+            this.lblDataGridview.AutoSize = true;
+            this.lblDataGridview.Location = new System.Drawing.Point(397, 87);
+            this.lblDataGridview.Name = "lblDataGridview";
+            this.lblDataGridview.Size = new System.Drawing.Size(126, 20);
+            this.lblDataGridview.TabIndex = 7;
+            this.lblDataGridview.Text = "Lista de Clientes";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(970, 480);
+            this.Controls.Add(this.lblDataGridview);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.cboEstados);
@@ -138,6 +149,7 @@ namespace WindowsFormsApp
         private System.Windows.Forms.ComboBox cboEstados;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblDataGridview;
     }
 }
 

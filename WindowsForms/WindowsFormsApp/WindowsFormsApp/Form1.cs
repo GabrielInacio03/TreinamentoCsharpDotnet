@@ -32,12 +32,51 @@ namespace WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show("Inicializando o Formulário");
-            cboEstados.Items.Clear();
-            foreach (var item in Estado.BuscarEstados())
-            {
-                cboEstados.Items.Add(item.ToString());
-            }
+            IniciarCboEstados();
+            IniciarDataGridView();
+        }
+        private void IniciarDataGridView()
+        {
+            //maneira simples
+            //dataGridView1.DataSource = Cliente.ListaDeClientes();
+
+            //maneira complexa
+            //dataGridView1.ColumnCount = 2;
+            //dataGridView1.Columns[0].Name = "ID";
+            //dataGridView1.Columns[1].Name = "Nome";
+
+            //var rows = new List<string[]>();
+            //foreach (var item in Cliente.ListaDeClientes())
+            //{
+            //    string[] row = new string[] { item.Id.ToString(), item.Nome };
+            //    rows.Add(row);
+            //}
+
+            //foreach (var item in rows)
+            //{
+            //    dataGridView1.Rows.Add(item);
+            //}
+
+            //maneira intermediária
+            var data = from cliente in Cliente.ListaDeClientes()
+                       //where
+                       orderby cliente.Nome
+                       select new 
+                       {
+                           Id = cliente.Id,
+                           Nome = cliente.Nome,
+                           Cpf = cliente.Cpf
+                       };
+            dataGridView1.DataSource = data.ToList();
+        }
+        private void IniciarCboEstados()
+        {
+            cboEstados.DataSource = Estado.BuscarEstados();
+            //cboEstados.Items.Clear();
+            //foreach (var item in Estado.BuscarEstados())
+            //{
+            //    cboEstados.Items.Add(item.ToString());
+            //}
         }
     }
 }
