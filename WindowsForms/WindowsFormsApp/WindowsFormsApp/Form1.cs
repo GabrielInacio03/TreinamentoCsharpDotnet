@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp
 {
@@ -19,7 +20,7 @@ namespace WindowsFormsApp
 
         private void btnClick_Click(object sender, EventArgs e)
         {
-            string nomeUsuario = "Gabriel Inácio";
+            string nomeUsuario = "Usuário: Gabriel Inácio, do estado de "+ ((Estado)cboEstados.SelectedItem).Id;
             txtNomeUsuario.Text = nomeUsuario;
         }
 
@@ -27,6 +28,16 @@ namespace WindowsFormsApp
         {
             var formshow = new FormShow();
             formshow.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Inicializando o Formulário");
+            cboEstados.Items.Clear();
+            foreach (var item in Estado.BuscarEstados())
+            {
+                cboEstados.Items.Add(item.ToString());
+            }
         }
     }
 }

@@ -33,6 +33,10 @@ namespace WindowsFormsApp
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
             this.btnClick = new System.Windows.Forms.Button();
             this.btnShow = new System.Windows.Forms.Button();
+            this.cboEstados = new System.Windows.Forms.ComboBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNomeUsuario
@@ -53,7 +57,7 @@ namespace WindowsFormsApp
             // 
             // btnClick
             // 
-            this.btnClick.Location = new System.Drawing.Point(49, 120);
+            this.btnClick.Location = new System.Drawing.Point(49, 201);
             this.btnClick.Name = "btnClick";
             this.btnClick.Size = new System.Drawing.Size(263, 77);
             this.btnClick.TabIndex = 2;
@@ -63,7 +67,7 @@ namespace WindowsFormsApp
             // 
             // btnShow
             // 
-            this.btnShow.Location = new System.Drawing.Point(49, 204);
+            this.btnShow.Location = new System.Drawing.Point(49, 300);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(263, 107);
             this.btnShow.TabIndex = 3;
@@ -71,17 +75,55 @@ namespace WindowsFormsApp
             this.btnShow.UseVisualStyleBackColor = true;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
+            // cboEstados
+            // 
+            this.cboEstados.FormattingEnabled = true;
+            this.cboEstados.Items.AddRange(new object[] {
+            "Selecione",
+            "São Paulo",
+            "Rio de Janeiro",
+            "Minas Gerais"});
+            this.cboEstados.Location = new System.Drawing.Point(49, 147);
+            this.cboEstados.Name = "cboEstados";
+            this.cboEstados.Size = new System.Drawing.Size(263, 28);
+            this.cboEstados.TabIndex = 4;
+            this.cboEstados.Text = "-- Selecione --";
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(45, 122);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(68, 20);
+            this.lblEstado.TabIndex = 5;
+            this.lblEstado.Text = "Estados";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(373, 87);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.cboEstados);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.btnClick);
             this.Controls.Add(this.txtNomeUsuario);
             this.Controls.Add(this.lblNomeUsuario);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,6 +135,9 @@ namespace WindowsFormsApp
         private System.Windows.Forms.TextBox txtNomeUsuario;
         private System.Windows.Forms.Button btnClick;
         private System.Windows.Forms.Button btnShow;
+        private System.Windows.Forms.ComboBox cboEstados;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
