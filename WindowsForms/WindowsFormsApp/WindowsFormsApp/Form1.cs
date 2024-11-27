@@ -78,5 +78,34 @@ namespace WindowsFormsApp
             //    cboEstados.Items.Add(item.ToString());
             //}
         }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmSobre = new FrmSobre();
+            frmSobre.Show();
+        }
+
+        private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmTexto = new FrmTexto();
+            frmTexto.Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void licençaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmLicenca = new FrmLicenca();
+            frmLicenca.Show();
+        }
+
+        private void doaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmDoacao = new FrmDoacao();
+            frmDoacao.Show();
+        }
     }
 }
