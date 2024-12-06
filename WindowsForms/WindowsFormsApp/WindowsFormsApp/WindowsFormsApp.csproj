@@ -88,6 +88,12 @@
     <Compile Include="FrmTexto.Designer.cs">
       <DependentUpon>FrmTexto.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDIParentPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParentPrincipal.Designer.cs">
+      <DependentUpon>MDIParentPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Estado.cs" />
     <Compile Include="Models\Exceptions\ErroDeProposito.cs" />
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTexto.resx">
       <DependentUpon>FrmTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParentPrincipal.resx">
+      <DependentUpon>MDIParentPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

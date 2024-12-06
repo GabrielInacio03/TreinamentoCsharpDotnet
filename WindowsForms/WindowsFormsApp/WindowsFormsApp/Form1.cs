@@ -15,7 +15,7 @@ namespace WindowsFormsApp
     {
         public Form1()
         {
-            notifyIcon1.ShowBalloonTip(5, "Notificação", "O programa foi executado com sucesso", ToolTipIcon.Info);
+            //notifyIcon1.ShowBalloonTip(5, "Notificação", "O programa foi executado com sucesso", ToolTipIcon.Info);
             InitializeComponent();
         }
 
