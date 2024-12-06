@@ -29,6 +29,7 @@ namespace WindowsFormsApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTexto));
             this.lblTexto = new System.Windows.Forms.Label();
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -70,6 +71,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtTexto);
             this.Controls.Add(this.lblTexto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmTexto";
             this.Text = "FrmTexto";
             this.ResumeLayout(false);

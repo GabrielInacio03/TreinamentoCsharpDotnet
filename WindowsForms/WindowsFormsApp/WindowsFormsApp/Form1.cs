@@ -15,6 +15,7 @@ namespace WindowsFormsApp
     {
         public Form1()
         {
+            notifyIcon1.ShowBalloonTip(5, "Notificação", "O programa foi executado com sucesso", ToolTipIcon.Info);
             InitializeComponent();
         }
 
@@ -22,6 +23,7 @@ namespace WindowsFormsApp
         {
             string nomeUsuario = "Usuário: Gabriel Inácio, do estado de "+ ((Estado)cboEstados.SelectedItem).Id;
             txtNomeUsuario.Text = nomeUsuario;
+
         }
 
         private void btnShow_Click(object sender, EventArgs e)
@@ -32,8 +34,26 @@ namespace WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ConfigurarAcaoIcon();
+            TratandoTimer();
             IniciarCboEstados();
             IniciarDataGridView();
+        }
+        private void ConfigurarAcaoIcon()
+        {
+            var contextMenu = new ContextMenu();
+            contextMenu.MenuItems.Add(new MenuItem("Fechar", Fechar_Click));
+            contextMenu.MenuItems.Add(new MenuItem("Abrir Cadastro", AbrirCadastro_Click));
+            notifyIcon1.ContextMenu = contextMenu;
+        }
+        private void Fechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void AbrirCadastro_Click(object sender, EventArgs e)
+        {
+            var frmCadastro = new FrmCadastro();
+            frmCadastro.Show(); 
         }
         private void IniciarDataGridView()
         {
@@ -106,6 +126,30 @@ namespace WindowsFormsApp
         {
             var frmDoacao = new FrmDoacao();
             frmDoacao.Show();
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TratandoTimer();
+        }
+        private void TratandoTimer()
+        {
+            lblDataHoraAtual.Text = "Dia e hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmCadastro = new FrmCadastro();
+            frmCadastro.Show();
+        }
+
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Cliquei no icone");
+        }
+
+        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você deu dois cliques no icone");
         }
     }
 }

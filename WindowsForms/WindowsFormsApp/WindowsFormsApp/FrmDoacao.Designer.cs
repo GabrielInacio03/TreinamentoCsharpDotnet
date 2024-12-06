@@ -29,6 +29,7 @@ namespace WindowsFormsApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoacao));
             this.lblDoacao = new System.Windows.Forms.Label();
             this.btnDoacao = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -60,6 +61,7 @@ namespace WindowsFormsApp
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnDoacao);
             this.Controls.Add(this.lblDoacao);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmDoacao";
             this.Text = "FrmDoacao";
             this.ResumeLayout(false);
