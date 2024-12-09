@@ -36,6 +36,7 @@ namespace WindowsFormsApp
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +45,8 @@ namespace WindowsFormsApp
             this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileMenu});
+            this.fileMenu,
+            this.importadorToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(948, 33);
@@ -97,6 +99,13 @@ namespace WindowsFormsApp
             this.exitToolStripMenuItem.Text = "Sai&r";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
             // 
+            // importadorToolStripMenuItem
+            // 
+            this.importadorToolStripMenuItem.Name = "importadorToolStripMenuItem";
+            this.importadorToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
+            this.importadorToolStripMenuItem.Text = "Importador";
+            this.importadorToolStripMenuItem.Click += new System.EventHandler(this.importadorToolStripMenuItem_Click);
+            // 
             // MDIParentPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -109,6 +118,7 @@ namespace WindowsFormsApp
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MDIParentPrincipal";
             this.Text = "MDIParentPrincipal";
+            this.Load += new System.EventHandler(this.MDIParentPrincipal_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -124,6 +134,7 @@ namespace WindowsFormsApp
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importadorToolStripMenuItem;
     }
 }
 

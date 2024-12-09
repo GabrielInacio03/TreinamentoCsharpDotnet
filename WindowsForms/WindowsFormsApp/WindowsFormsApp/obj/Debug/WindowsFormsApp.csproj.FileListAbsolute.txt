@@ -15,3 +15,4 @@ C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\o
 C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmDoacao.resources
 C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmCadastro.resources
 C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.MDIParentPrincipal.resources
+C:\workspace\Torneseumprogramador\WindowsForms\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmImportador.resources

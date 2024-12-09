@@ -109,5 +109,17 @@ namespace WindowsFormsApp
             frm1.MdiParent = this;
             frm1.Show();
         }
+
+        private void importadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmImportador frmImportador = new FrmImportador();
+            frmImportador.MdiParent = this;
+            frmImportador.Show();
+        }
+
+        private void MDIParentPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
