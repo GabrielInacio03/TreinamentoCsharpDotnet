@@ -51,8 +51,11 @@ namespace WindowsFormsApp
             this.lblDataHoraAtual = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNomeUsuario
@@ -146,7 +149,7 @@ namespace WindowsFormsApp
             this.cadastroToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1705, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1705, 36);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -156,7 +159,7 @@ namespace WindowsFormsApp
             this.novoTextoToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(91, 32);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
             // novoTextoToolStripMenuItem
@@ -180,7 +183,7 @@ namespace WindowsFormsApp
             this.licençaToolStripMenuItem,
             this.doaçãoToolStripMenuItem});
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(60, 29);
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(60, 32);
             this.infoToolStripMenuItem.Text = "Info";
             // 
             // sobreToolStripMenuItem
@@ -207,7 +210,7 @@ namespace WindowsFormsApp
             // cadastroToolStripMenuItem
             // 
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(99, 29);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
@@ -234,11 +237,30 @@ namespace WindowsFormsApp
             this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
             this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 36);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStrip1.Size = new System.Drawing.Size(1705, 38);
+            this.toolStrip1.TabIndex = 10;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(112, 33);
+            this.toolStripLabel1.Text = "MENU STRIP";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1705, 866);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.lblDataHoraAtual);
             this.Controls.Add(this.lblDataGridview);
             this.Controls.Add(this.dataGridView1);
@@ -257,6 +279,8 @@ namespace WindowsFormsApp
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,6 +308,8 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
     }
 }
 
